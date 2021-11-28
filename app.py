@@ -1,9 +1,8 @@
 import os, io
 from google.cloud import vision
-from pdf2image import convert_from_path
 from docx import Document
 
-def detect_text(path, count):
+def detect_text(name, path):
     """Detects text in the file."""
     from google.cloud import vision
     client = vision.ImageAnnotatorClient()
@@ -16,7 +15,7 @@ def detect_text(path, count):
     response = client.text_detection(image=image)
     texts = response.text_annotations
 
-    file = open("results/page_" + str(count) + ".txt", "w+")
+    file = open("results/" + name + ".txt", "w+")
     document = Document()
     p = document.add_paragraph("")
 
@@ -35,8 +34,10 @@ def detect_text(path, count):
         #print('bounds: {}'.format(','.join(vertices)))
 
     document.add_page_break()
-    document.save("results/page_" + str(count) + ".docx")
+    document.save("results/" + name + ".docx")
     file.close()
+
+    print("Completed", name)
 
     if response.error.message:
         raise Exception(
@@ -47,18 +48,9 @@ def detect_text(path, count):
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"Token.json"
 
-client = vision.ImageAnnotatorClient()
-pdfs = r"file.pdf"
-pages = convert_from_path(pdfs)
-img = pdfs.replace(".pdf","")
+paths = ["images/" + i for i in os.listdir("images")]
+names = [i[:i.find(".")] for i in os.listdir("images")]
 
-count = 1
-for page in pages:
-    jpeg_file = "images/img_" + str(count) + ".jpeg"
-    page.save(jpeg_file, "JPEG")
-    count += 1
-
-for i in range(1, count):
-    detect_text("images/img_" + str(i) + ".jpeg", i)
+for name, path in zip(names, paths): detect_text(name,path)
 
 print("Completed")
