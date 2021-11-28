@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "verim-project",
+  "private_key_id": "89b0d9772d4142e4ba08af1c9cc3418d4d43185e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDhDHU4rM/wBRqz\nuCs655ac7atUBANq3ZEEEz67RwU69olnVeTu0g2nq77ewmVIK+SsFBwcEnIy9bgd\nRP4BPEjGjJzlu/vQJ5O1ctPizfDxbHfDbXBgRL2U1AlNO2IsCVvMAQK6mcxCczVm\nzMPW7h0KTpaQrGC3SXp2qSVvn/bVUuInRChRKD+x3AvqlzxT/cTC2XvR+QFcqjDr\nNNGU8IYCalrE32SVL1XRYd8ndXk13S2sfrV8s4hSqgWbFmcw6pV9b/GIVaL+8bIK\nDO+7UNvuMRckwF1b88SzQv/VqiQoiRZtNI08g11B9dB7kQb3eAJ3SxOrEWpUVE6y\njopTmIMXAgMBAAECggEABbqadVHjjTmkCgqDLIxesin+tYnQncomzz1qLbxLbsp9\n3vU5zwvmhcEtKmCKfCwvNbjhVPmckfLdYqlcn01t5i1dhR+kSRKTg7KjoDTGkG7G\nxwvPKN7hxfB2jX0YglnOo20sfkbnWJMJkKS1IOXjiV1MyewJc5ZZmWcJk+404Lif\niBWUdm/ucUnCg6jZcWLN3/WO2SgdU+/wme+lbJesFhTpnpz/ethwZkVOTqLVDcvk\nzEUzQ8Fc+a/tGnJOrZbq3720QvZAHoEunQPX8dK4ZJuafpzA/Ky6huzF2QBIlyl+\nB/4x08GWtzbW8JG0Gm7WNttr8ZpEROjWUwU9FQyIEQKBgQD3GnlXl8rv028f0Elq\nSpuQ1grF/d+W+ysbE2vPzSLV0GdkYPQTCFpPN5wnbD7lRqTpvuYsLe5Kbli5ExO8\nyQhir2vV5edKV1Qzrjv2oNMpd2QWbr10+In8+TSHnb+PbiLMl9vwsyWbCbkkcBMi\nort/SpixUSXyEqUzrez7UzaYHwKBgQDpJrUlhrfC+KI/7Cm+qpEeEdLvG5xvifcZ\npZ8PjdZHiAtLXsK+Q/UcE5pbaqHidCnnUtHX4Q/oxb7kVcU3fXq0UJzWiFFVHKYR\niOkfG2l1zWV2N8n9SylAIhkx0jZYDGDjW+JU74yJ4kXa79LmgmvnoHONhGRnwnXi\nn2xmMRWWCQKBgQDZlqFVBV/40PjgTbvn8eyMnD3+XHA/dcpeXDqqUBulpY71r/4c\nqFVFvlUtzb6QjCV5gtUSABv9xK8xwV+29FsC8y+EuZ5yMvX9UCaTJMjskao7qqX/\n0z9G2HZuGPVuqm/QMsTEbivmGqjCMkJXVG7ARwKv2SINyGdaW4P7RyoixwKBgCbo\nr8hgcCBYj/Ms/VZ1bpxfCx2eNQAkPRmJmz7kQ8NSP9hHKybHfos99j+VTwjUq/2P\nw7dMNvR4s7+1VKFLDoQzA8mFnFUg39IDUCxBzdq7+Ve+PbZIqcyrJBs9YpZVEoI+\n3kmgZIrKOTAtX7vaPhm8nCwc0QjD2hqE0nlHbbvJAoGAOt4l6eCesOQGBvjzkW8e\nHX/Yyi+ZA6aWCKS0+HnVbFo9TeHxsQhkdZe8ahQdE0v/+ccmfFHd4ms0e9mWznjE\nbo4EO6Gx86KBLPwv6Nll8/QUaT72ZIXC6eUMqKZsje0j1IXv679LHTaenZuiWd9T\nEJreJoWJCSNwzSq3G3hXBiw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "verimhelpsadi@verim-project.iam.gserviceaccount.com",
+  "client_id": "101085475572142072999",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/verimhelpsadi%40verim-project.iam.gserviceaccount.com"
+}
