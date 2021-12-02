@@ -20,13 +20,13 @@ def detect_text(name, path):
     p = document.add_paragraph("")
 
     for text in texts:
+
+        temp_content = text.description
         if text.description.find("-") != -1:
-            temp_content = text.description.replace("-\n","").replace("-", "")
-            p.add_run(temp_content)
-            file.write(temp_content)
-        else:
-            p.add_run(text.description + " ")
-            file.write(text.description + " ")
+            temp_content = temp_content.replace("-\n","").replace("-", "")
+    
+        temp_content = temp_content.replace("\n", " ")    
+        p.add_run(temp_content + " ")
 
         #vertices = (['({},{})'.format(vertex.x, vertex.y)
                     #for vertex in text.bounding_poly.vertices])
