@@ -1,7 +1,6 @@
 import os, io
 from google.cloud import vision
 from docx import Document
-
 def detect_text(name, path):
     """Detects text in the file."""
     from google.cloud import vision
@@ -22,11 +21,13 @@ def detect_text(name, path):
     for text in texts:
         if text.description.find("-") != -1:
             temp_content = text.description.replace("-\n","").replace("-", "")
-            p.add_run(temp_content)
-            file.write(temp_content)
-        else:
-            p.add_run(text.description + " ")
-            file.write(text.description + " ")
+            # p.add_run(temp_content)
+            # file.write(temp_content)
+        
+        
+        temp_content = text.description.replace("\n", " ")
+        p.add_run(temp_content + " ")
+        file.write(temp_content + " ")
 
         #vertices = (['({},{})'.format(vertex.x, vertex.y)
                     #for vertex in text.bounding_poly.vertices])
